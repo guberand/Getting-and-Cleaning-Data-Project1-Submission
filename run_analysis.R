@@ -15,7 +15,7 @@ test_subjectdata<-read.table("UCI HAR Dataset/test/subject_test.txt",header=F)
 train_activity_codes<-read.table("UCI HAR Dataset/train/y_train.txt",header=F)
 test_activity_codes<-read.table("UCI HAR Dataset/test/y_test.txt",header=F)
 
-## Train data- Code to map activity code to activity description
+## Train data- R code to map activity code to activity description
 i=0
 for (i in 1:nrow(train_activity_codes)){
   if (train_activity_codes[i,1]==1){
