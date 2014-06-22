@@ -82,7 +82,7 @@ tidydataset1<-all_raw_data[,c(1,2,3,4,5,6,7,8,43,44,45,46,47,48,
                                      426,427,428,429,430,431,454,455,456,
                                      505,506,515,518,519,528,531,
                                      532,541,544,545,554)]
-##renaming column names
+##renaming column names for tidydataset1 with 81 columns including subject and activity
 colnames(tidydataset1)<-c("subject","activity",
                                   "tbodyacc_xaxis_mean","tbodyacc_yaxis_mean",
                                   "tbodyacc_zaxis_mean","tbodyacc_xaxis_stddev",
@@ -126,7 +126,9 @@ colnames(tidydataset1)<-c("subject","activity",
                                   "fbodygyrojerkmag_xyzaxis_freqmean")
 
 
-### Aggregation to create a second tidy dataset
+## Aggregate function to create a second tidy dataset. 
+##Each row comprise of 79 average variables for each of subject/activity combination. 
+##81 columns in total and 30 subjects * 6 activity=180 rows in total
 tidydataset2<-aggregate(x=tidydataset1[,c(-1,-2)],by=list(tidydataset1$subject,
                       tidydataset1$activity),FUN=mean, na.rm=TRUE,simplify=T)
 ## Modifying Column names for the tidydataset2
