@@ -83,90 +83,166 @@ CODE BOOK
 -----------------------------------------------------------------------------------------------------------------
 RAW DATA VARIABLE NAME  VS   TIDY DATA VARIABLE NAME  MAPPING
 -----------------------------------------------------------------------------------------------------------------
-
-Raw Data Variable Name                        Tidy Data Variable Name
--------------------------------------------------------------------------------------------------------
 				subject
 				activity
-1 tBodyAcc-mean()-X     		tbodyacc_xaxis_mean
-2 tBodyAcc-mean()-Y  		tbodyacc_yaxis_mean 
-3 tBodyAcc-mean()-Z 		tbodyacc_zaxis_mean 
-4 tBodyAcc-std()-X			tbodyacc_xaxis_stddev 
-5 tBodyAcc-std()-Y			tbodyacc_yaxis_stddev
-6 tBodyAcc-std()-Z			tbodyacc_zaxis_stddev
-41 tGravityAcc-mean()-X		tgravityacc_xaxis_mean
-42 tGravityAcc-mean()-Y		tgravityacc_yaxis_mean
-43 tGravityAcc-mean()-Z		tgravityacc_zaxis_mean
-44 tGravityAcc-std()-X		tgravityacc_xaxis_stddev
-45 tGravityAcc-std()-Y		tgravityacc_yaxis_stddev
-46 tGravityAcc-std()-Z		tgravityacc_zaxis_stddev
-81 tBodyAccJerk-mean()-X		tbodyaccjerk_xaxis_mean
-82 tBodyAccJerk-mean()-Y		tbodyaccjerk_yaxis_mean
-83 tBodyAccJerk-mean()-Z		tbodyaccjerk_zaxis_mean
-84 tBodyAccJerk-std()-X		tbodyaccjerk_xaxis_stddev
-85 tBodyAccJerk-std()-Y		tbodyaccjerk_yaxis_stddev
-86 tBodyAccJerk-std()-Z		tbodyaccjerk_zaxis_stddev
-121 tBodyGyro-mean()-X		tbodygyro_xaxis_mean
-122 tBodyGyro-mean()-Y		tbodygyro_yaxis_mean
-123 tBodyGyro-mean()-Z		tbodygyro_zaxis_mean
-124 tBodyGyro-std()-X		tbodygyro_xaxis_stddev
-125 tBodyGyro-std()-Y		tbodygyro_yaxis_stddev
-126 tBodyGyro-std()-Z		tbodygyro_zaxis_stddev
-161 tBodyGyroJerk-mean()-X		tbodygyrojerk_xaxis_mean
-162 tBodyGyroJerk-mean()-Y		tbodygyrojerk_yaxis_mean
-163 tBodyGyroJerk-mean()-Z		tbodygyrojerk_zaxis_mean
-164 tBodyGyroJerk-std()-X		tbodygyrojerk_xaxis_stddev
-165 tBodyGyroJerk-std()-Y		tbodygyrojerk_yaxis_stddev
-166 tBodyGyroJerk-std()-Z		tbodygyrojerk_zaxis_stddev
-201 tBodyAccMag-mean()   		tbodyaccmag_xyzaxis_mean 
-202 tBodyAccMag-std()		tbodyaccmag_xyzaxis_stddev
-214 tGravityAccMag-mean()		tgravityaccmag_xyzaxis_mean
-215 tGravityAccMag-std()		tgravityaccmag_xyzaxis_stddev
-227 tBodyAccJerkMag-mean()		tbodyaccjerkmag_xyzaxis_mean
-228 tBodyAccJerkMag-std()		tbodyaccjerkmag_xyzaxis_stddev
-240 tBodyGyroMag-mean()		tbodygyromag_xyzaxis_mean			
-241 tBodyGyroMag-std()		tbodygyromag_xyzaxis_stddev
-253 tBodyGyroJerkMag-mean()		tbodygyrojerkmag_xyzaxis_mean
-254 tBodyGyroJerkMag-std()		tbodygyrojerkmag_xyzaxis_stddev
-266 fBodyAcc-mean()-X		fbodyacc_xaxis_mean
-267 fBodyAcc-mean()-Y		fbodyacc_yaxis_mean
-268 fBodyAcc-mean()-Z		fbodyacc_zaxis_mean
-269 fBodyAcc-std()-X			fbodyacc_xaxis_stddev
-270 fBodyAcc-std()-Y			fbodyacc_yaxis_stddev
-271 fBodyAcc-std()-Z			fbodyacc_zaxis_stddev
-294 fBodyAcc-meanFreq()-X		fbodyacc_xaxis_freqmean
-295 fBodyAcc-meanFreq()-Y		fbodyacc_yaxis_freqmean
-296 fBodyAcc-meanFreq()-Z		fbodyacc_zaxis_freqmean
-345 fBodyAccJerk-mean()-X		fbodyaccjerk_xaxis_mean		
-346 fBodyAccJerk-mean()-Y		fbodyaccjerk_yaxis_mean
-347 fBodyAccJerk-mean()-Z		fbodyaccjerk_zaxis_mean
-348 fBodyAccJerk-std()-X		fbodyaccjerk_xaxis_stddev 
-349 fBodyAccJerk-std()-Y		fbodyaccjerk_yaxis_stddev 
-350 fBodyAccJerk-std()-Z		fbodyaccjerk_zaxis_stddev 
-373 fBodyAccJerk-meanFreq()-X		fbodyaccjerk_xaxis_freqmean
-374 fBodyAccJerk-meanFreq()-Y		fbodyaccjerk_yaxis_freqmean
-375 fBodyAccJerk-meanFreq()-Z		fbodyaccjerk_zaxis_freqmean
-424 fBodyGyro-mean()-X		fbodygyro_xaxis_mean
-425 fBodyGyro-mean()-Y		fbodygyro_yaxis_mean
-426 fBodyGyro-mean()-Z		fbodygyro_zaxis_mean
-427 fBodyGyro-std()-X		fbodygyro_xaxis_stddev
-428 fBodyGyro-std()-Y		fbodygyro_yaxis_stddev
-429 fBodyGyro-std()-Z		fbodygyro_zaxis_stddev
-452 fBodyGyro-meanFreq()-X		fbodygyro_xaxis_freqmean
-453 fBodyGyro-meanFreq()-Y		fbodygyro_yaxis_freqmean
-454 fBodyGyro-meanFreq()-Z		fbodygyro_zaxis_freqmean
-503 fBodyAccMag-mean()		fbodyaccmag_xyzaxis_mean
-504 fBodyAccMag-std()		fbodyaccmag_xyzaxis_stddev
-513 fBodyAccMag-meanFreq()		fbodyaccmag_xyzaxis_freqmean
-516 fBodyBodyAccJerkMag-mean()	fbodyaccjerkmag_xyzaxis_mean		
-517 fBodyBodyAccJerkMag-std()	fbodyaccjerkmag_xyzaxis_stddev
-526 fBodyBodyAccJerkMag-meanFreq()	fbodyaccjerkmag_xyzaxis_freqmean
-529 fBodyBodyGyroMag-mean()	fbodygyromag_xyzaxis_mean	
-530 fBodyBodyGyroMag-std()		fbodygyromag_xyzaxis_stddev
-539 fBodyBodyGyroMag-meanFreq()	fbodygyromag_xyzaxis_freqmean
-542 fBodyBodyGyroJerkMag-mean()	fbodygyrojerkmag_xyzaxis_mean
-543 fBodyBodyGyroJerkMag-std()	fbodygyrojerkmag_xyzaxis_stddev
-552 fBodyBodyGyroJerkMag-meanFreq()	fbodygyrojerkmag_xyzaxis_freqmean
+1 tBodyAcc-mean()-X    =   tbodyacc_xaxis_mean
+
+2 tBodyAcc-mean()-Y    =   tbodyacc_yaxis_mean 
+
+3 tBodyAcc-mean()-Z    =   tbodyacc_zaxis_mean 
+
+4 tBodyAcc-std()-X    =    tbodyacc_xaxis_stddev 
+
+5 tBodyAcc-std()-Y    =   tbodyacc_yaxis_stddev
+
+6 tBodyAcc-std()-Z    =    tbodyacc_zaxis_stddev
+
+41 tGravityAcc-mean()-X    =   tgravityacc_xaxis_mean
+
+42 tGravityAcc-mean()-Y    =    tgravityacc_yaxis_mean
+
+43 tGravityAcc-mean()-Z    =   tgravityacc_zaxis_mean
+
+44 tGravityAcc-std()-X     =   tgravityacc_xaxis_stddev
+
+45 tGravityAcc-std()-Y    =   tgravityacc_yaxis_stddev
+
+46 tGravityAcc-std()-Z    =    tgravityacc_zaxis_stddev
+
+81 tBodyAccJerk-mean()-X    =   tbodyaccjerk_xaxis_mean
+
+82 tBodyAccJerk-mean()-Y    =   tbodyaccjerk_yaxis_mean
+
+83 tBodyAccJerk-mean()-Z     =   tbodyaccjerk_zaxis_mean
+
+84 tBodyAccJerk-std()-X    =    tbodyaccjerk_xaxis_stddev
+
+85 tBodyAccJerk-std()-Y    =   tbodyaccjerk_yaxis_stddev
+
+86 tBodyAccJerk-std()-Z    =   tbodyaccjerk_zaxis_stddev
+
+121 tBodyGyro-mean()-X    =   tbodygyro_xaxis_mean
+
+122 tBodyGyro-mean()-Y    =    tbodygyro_yaxis_mean
+
+123 tBodyGyro-mean()-Z     =    tbodygyro_zaxis_mean
+
+124 tBodyGyro-std()-X    =   tbodygyro_xaxis_stddev
+
+125 tBodyGyro-std()-Y    =    tbodygyro_yaxis_stddev
+
+126 tBodyGyro-std()-Z    =    tbodygyro_zaxis_stddev
+
+161 tBodyGyroJerk-mean()-X    =   tbodygyrojerk_xaxis_mean
+
+162 tBodyGyroJerk-mean()-Y    =    tbodygyrojerk_yaxis_mean
+
+163 tBodyGyroJerk-mean()-Z    =   tbodygyrojerk_zaxis_mean
+
+164 tBodyGyroJerk-std()-X     =   tbodygyrojerk_xaxis_stddev
+
+165 tBodyGyroJerk-std()-Y    =   tbodygyrojerk_yaxis_stddev
+
+166 tBodyGyroJerk-std()-Z    =    tbodygyrojerk_zaxis_stddev
+
+201 tBodyAccMag-mean()    =   tbodyaccmag_xyzaxis_mean 
+
+202 tBodyAccMag-std()    =   tbodyaccmag_xyzaxis_stddev
+
+214 tGravityAccMag-mean()    =   tgravityaccmag_xyzaxis_mean
+
+215 tGravityAccMag-std()    =   tgravityaccmag_xyzaxis_stddev
+
+227 tBodyAccJerkMag-mean()    =    tbodyaccjerkmag_xyzaxis_mean
+
+228 tBodyAccJerkMag-std()    =   tbodyaccjerkmag_xyzaxis_stddev
+
+240 tBodyGyroMag-mean()    =   tbodygyromag_xyzaxis_mean	
+		
+241 tBodyGyroMag-std()    =   tbodygyromag_xyzaxis_stddev
+
+253 tBodyGyroJerkMag-mean()    =   tbodygyrojerkmag_xyzaxis_mean
+
+254 tBodyGyroJerkMag-std()    =    tbodygyrojerkmag_xyzaxis_stddev
+
+266 fBodyAcc-mean()-X    =   fbodyacc_xaxis_mean
+
+267 fBodyAcc-mean()-Y    =   fbodyacc_yaxis_mean
+
+268 fBodyAcc-mean()-Z    =   fbodyacc_zaxis_mean
+
+269 fBodyAcc-std()-X	    =   fbodyacc_xaxis_stddev
+
+270 fBodyAcc-std()-Y	    =   fbodyacc_yaxis_stddev
+
+271 fBodyAcc-std()-Z	    =   fbodyacc_zaxis_stddev
+
+294 fBodyAcc-meanFreq()-X    =   fbodyacc_xaxis_freqmean
+
+295 fBodyAcc-meanFreq()-Y    =   fbodyacc_yaxis_freqmean
+
+296 fBodyAcc-meanFreq()-Z    =   fbodyacc_zaxis_freqmean
+
+345 fBodyAccJerk-mean()-X    =   fbodyaccjerk_xaxis_mean
+		
+346 fBodyAccJerk-mean()-Y    =   fbodyaccjerk_yaxis_mean
+
+347 fBodyAccJerk-mean()-Z    =   fbodyaccjerk_zaxis_mean
+
+348 fBodyAccJerk-std()-X    =   fbodyaccjerk_xaxis_stddev 
+
+349 fBodyAccJerk-std()-Y    =   fbodyaccjerk_yaxis_stddev 
+
+350 fBodyAccJerk-std()-Z    =   fbodyaccjerk_zaxis_stddev 
+
+373 fBodyAccJerk-meanFreq()-X	    =   fbodyaccjerk_xaxis_freqmean
+
+374 fBodyAccJerk-meanFreq()-Y	    =   fbodyaccjerk_yaxis_freqmean
+
+375 fBodyAccJerk-meanFreq()-Z	    =   fbodyaccjerk_zaxis_freqmean
+
+424 fBodyGyro-mean()-X    =   fbodygyro_xaxis_mean
+
+425 fBodyGyro-mean()-Y    =   fbodygyro_yaxis_mean
+
+426 fBodyGyro-mean()-Z    =   fbodygyro_zaxis_mean
+
+427 fBodyGyro-std()-X    =   fbodygyro_xaxis_stddev
+
+428 fBodyGyro-std()-Y    =   fbodygyro_yaxis_stddev
+
+429 fBodyGyro-std()-Z    =   fbodygyro_zaxis_stddev
+
+452 fBodyGyro-meanFreq()-X    =   fbodygyro_xaxis_freqmean
+
+453 fBodyGyro-meanFreq()-Y    =   fbodygyro_yaxis_freqmean
+
+454 fBodyGyro-meanFreq()-Z    =   fbodygyro_zaxis_freqmean
+
+503 fBodyAccMag-mean()    =   fbodyaccmag_xyzaxis_mean
+
+504 fBodyAccMag-std()    =   fbodyaccmag_xyzaxis_stddev
+
+513 fBodyAccMag-meanFreq()    =   fbodyaccmag_xyzaxis_freqmean
+
+516 fBodyBodyAccJerkMag-mean()    =   fbodyaccjerkmag_xyzaxis_mean		
+
+517 fBodyBodyAccJerkMag-std()    =   fbodyaccjerkmag_xyzaxis_stddev
+
+526 fBodyBodyAccJerkMag-meanFreq()    =   fbodyaccjerkmag_xyzaxis_freqmean
+
+529 fBodyBodyGyroMag-mean()    =   fbodygyromag_xyzaxis_mean	
+
+530 fBodyBodyGyroMag-std()    =   fbodygyromag_xyzaxis_stddev
+
+539 fBodyBodyGyroMag-meanFreq()    =   fbodygyromag_xyzaxis_freqmean
+
+542 fBodyBodyGyroJerkMag-mean()    =   fbodygyrojerkmag_xyzaxis_mean
+
+543 fBodyBodyGyroJerkMag-std()    =   fbodygyrojerkmag_xyzaxis_stddev
+
+552 fBodyBodyGyroJerkMag-meanFreq()    =   fbodygyrojerkmag_xyzaxis_freqmean
+
 		
 -------------------------------------------------------------------------------------------------------------------------------------------
 TIDY DATA VARIABLE NAME AND ITS DESCRIPTION                                                            
