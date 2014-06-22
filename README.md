@@ -33,12 +33,12 @@ Following files are used in order to achieve the goal of creating two tidy datas
 =========================================
 tidydataset1
 =========================================
-tidydataset1 comprise of 79 columns that represent mean, standard deviation and meanfreq columns from the merged data of test and train raw dataset. 
+tidydataset1 comprise of 79 columns that represent mean, standard deviation and meanfreq columns from the merged data of test and train raw dataset. And column subject and activity.
 
 =========================================
 tidydataset2
 =========================================
-tidydataset1 comprise of total of 81 columns: 79 columns that represent average of each of the columns that represent mean, standard deviation and meanfreq from the merged data of test and train raw dataset. 
+tidydataset2 comprise of total of 81 columns: 79 columns for each combination of subject / activity representing the average of each of the columns from tidydataset1.
 In addition the first two columns are subject and activity names. In total it has a total of 30*6=180 rows representing each combination of subject& activity name.
 
 
@@ -47,7 +47,7 @@ The project submission includes the following files:
 
 
 1.  'README.md'
-2.  'CodeBook.md'- Shows the list of variables and its description
+2.  'CodeBook.md'- The study design, mapping of raw data to tidy data variable names that represent mean, standard deviation & frequency mean and  tidy data set variable names and its description are provided in this document.
 3.  'run_analysis.R' - R script to read the raw dataset and create tidy dataset. And using the tidy dataset create another dataset with the average of the 79 variables
 4. 'tidydataset2.txt'-  Independent tidy data set with the average of each variable for each activity and each subject.
 
